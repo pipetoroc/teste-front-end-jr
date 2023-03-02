@@ -1,0 +1,14 @@
+.header{
+  display: grid;
+  grid-template-rows: 32px 72px 40px;
+  height: 144px;
+  width: 90%;
+  margin: 0 auto;
+  .header__ul{
+    display: flex;
+    place-content: center;
+    .header__li{
+      margin: 0 119px;
+    }
+  }
+ }
