@@ -14,8 +14,9 @@
   $dark-color: #2a2a2a;
   $gray: #9f9f9f;
   $accent-color: #f71963;
+  $light-color: #F7F5F2;
   /* Tipografía */
-  $font: Poppins,Helvetica, Arial, sans-serif;
+  $font: 'Poppins', sans-serif;
 
 /* Las adaptamos al modo oscuro */
 // @media (prefers-color-scheme: dark) {
@@ -83,7 +84,7 @@ html {
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
-  font-size: 1em;
+  // font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;
@@ -143,7 +144,6 @@ svg {
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
-  font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--negro);
   /* opcional */
@@ -158,4 +158,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+}
+html{
+  font-size: 62.5%;
 }

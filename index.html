@@ -8,35 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="./public/style/main.css">
+    <link rel="stylesheet" href="./public/style/index.css">
   </head>
   <body>
     <header>
       <div class="grid">
-        <ul>
-          <li>Compra</li>
-          <li>Frete gratis</li>
-          <li>Parcel</li>
+        <ul class="grid__info">
+          <li class="grid__text grid__text--compra">100% seguro</li>
+          <li class="grid__text grid__text--frete">Frete gratis</li>
+          <li class="grid__text grid__text--parcele">Parcele</li>
         </ul>
-        <div>
-          <span></span>
-          <input type="text" placeholder="O que você está buscando?">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="grid__search">
+          <span class="grid__logo"></span>
+          <div class="search-container"> 
+            <input class="grid__input" type="search" placeholder="O que você está buscando?">
+            <span class="search__lent"></span>
+          </div>
+          <ul class="grid__icons">
+            <li class="icons__item"></li>
+            <li class="icons__item"></li>
+            <li class="icons__item"></li>
+            <li class="icons__item"></li>
           </ul>
         </div>
-        <nav>
-          <ul>
-              <li">todas categorias</li>
-              <li">spermercado</li>
-              <li">livros</li>
-              <li">moda</li>
-              <li">lançamentos</li>
-              <li">ofertas do dia</li>
-              <li">assinatura</li>
+        <nav class="grid__nav">
+          <ul class="grid__list">
+              <li class="grid__item">todas categorias</li>
+              <li class="grid__item">spermercado</li>
+              <li class="grid__item">livros</li>
+              <li class="grid__item">moda</li>
+              <li class="grid__item">lançamentos</li>
+              <li class="grid__item">ofertas do dia</li>
+              <li class="grid__item">assinatura</li>
           </ul>
         </nav>
      </div>
