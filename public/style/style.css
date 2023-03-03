@@ -296,3 +296,36 @@ html {
 .ul__a:nth-child(4) {
   background-image: url("/src/assets/VTEX-TEST/ShoppingCart.svg");
 }
+
+.div {
+  width: 100%;
+  height: 395px;
+  padding: 52px 90px 50px 90px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000), url("/src/assets/picture.jpg");
+}
+.div__h2 {
+  width: 21ch;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 72px;
+  color: #ffffff;
+}
+.div__p {
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.div__button {
+  width: 227px;
+  height: 60px;
+  margin-top: 51px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #ffffff;
+  background-color: #f71963;
+}
