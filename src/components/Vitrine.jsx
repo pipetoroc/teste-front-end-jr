@@ -1,5 +1,7 @@
+import './Vitrine.css'
+
 export function Vitrine () {
   return (
-    <h1> Esta es la Vitrina en React</h1>
+    <h1 className='Vitrine__h1'>Produtos Relacionados</h1>
   )
 }

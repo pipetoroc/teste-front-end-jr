@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 174px;
-  padding: 34px 77px 0 82px;
+  height: min-content;
+  padding: 34px 77px 39px 82px;
   &__a{
     width: 128px;
     height: 174px;
@@ -23,10 +23,27 @@
     display: inline-block;
     width: 61px;
     height: 61px;
-    background-image: url("/src/assets/icons/monitorar-tablet-e-smartohone.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    &--tecnologia{
+      @include background("/src/assets/icons/monitorar-tablet-e-smartohone.svg");
+    }
+    &--super{
+      @include background("/src/assets/icons/supermercados.svg");
+    }
+    &--bebida{
+      @include background("/src/assets/icons/whiskey.svg");
+    }
+    &--ferramenta{
+      @include background("/src/assets/icons/ferramentas.svg");
+    }
+    &--saude{
+      @include background("/src/assets/icons/cuidados-de-saude.svg");
+    }
+    &--esportes{
+      @include background("/src/assets/icons/corrida.svg");
+    }
+    &--moda{
+      @include background("/src/assets/icons/moda.svg");
+    }
   }
   &__p{
     margin-top: 22px;

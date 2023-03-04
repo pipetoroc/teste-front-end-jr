@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* Tipografía */
+.Vitrine__h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 45px;
+  color: #f71963;
+}

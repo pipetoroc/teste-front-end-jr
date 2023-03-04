@@ -1,0 +1,41 @@
+.section-parceiros{
+  display: flex;
+  justify-content: center;
+  gap: 105px;
+  margin: 71px 0 51px 0;
+  &__div{
+    width: 574px;
+    height: 350px;
+    padding: 114px 339px 40px 40px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0)0%, #000000), url("/src/assets/MaskGroup.jpg");
+    border-radius: 20px;
+  }
+  &__h2{
+    margin-bottom: 8px;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 60px;
+    color: $background;
+  }
+  &__p{
+    margin-bottom: 32px;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: $background;
+  }
+}
+.div__button--parceiros{
+ width: 131px; 
+ height: 48px;
+ margin-top: 44px;
+ border-radius: 10px;
+ font-weight: 900;
+ font-size: 1.6rem;
+ line-height: 24px;
+ text-transform: uppercase;
+ border-radius: 20px;
+
+}

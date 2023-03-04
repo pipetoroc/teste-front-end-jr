@@ -37,7 +37,7 @@
 
   &__li {
     color: $accent-color;
-    margin: 0 119px;
+    margin: 0 60px;
     &--compra{
       color: $gray;
     }
@@ -59,18 +59,15 @@
   }
   
   &__span {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     &--lent {
       width: 28px;
       height: 28px;
-      background-image: url('/src/assets/VTEX-TEST/MagnifyingGlass.svg');  
+      @include background('/src/assets/VTEX-TEST/MagnifyingGlass.svg');  
     }
     &--logo {
       height: 50.69px;
       width: 139px;
-      background-image: url('/src/assets/logo.svg');
+      @include background('/src/assets/logo.svg');
     }
     &--compra {
       display: inline-block;
@@ -78,7 +75,7 @@
       height: 20px;
       width: 20px;
       margin-right: 9px;
-      background-image: url('/src/assets/ShieldCheck.svg');
+      @include background('/src/assets/ShieldCheck.svg');
     }
     &--frete {
       display: inline-block;
@@ -86,7 +83,7 @@
       height: 20px;
       width: 20px;
       margin-right: 9px;
-      background-image: url('/src/assets/Truck.svg');
+      @include background('/src/assets/Truck.svg');
     }
     &--parcele {
       display: inline-block;
@@ -94,7 +91,7 @@
       height: 20px;
       width: 20px;
       margin-right: 9px;
-      background-image: url('/src/assets/CreditCard.svg');
+      @include background('/src/assets/CreditCard.svg');
     }
   }
 
@@ -142,22 +139,19 @@
     width: 32px;
     height: 32px;
     margin:0 16px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     &:nth-child(1) {
       width: 24px;
       height: 24px;
-      background-image: url("/src/assets/VTEX-TEST/Group.svg");
+      @include background("/src/assets/VTEX-TEST/Group.svg");
     }
     &:nth-child(2) {
-      background-image: url("/src/assets/VTEX-TEST/Heart.svg");
+      @include background("/src/assets/VTEX-TEST/Heart.svg");
     }
     &:nth-child(3) {
-      background-image: url("/src/assets/VTEX-TEST/UserCircle.svg");
+      @include background("/src/assets/VTEX-TEST/UserCircle.svg");
     }
     &:nth-child(4) {
-      background-image: url("/src/assets/VTEX-TEST/ShoppingCart.svg");
+      @include background("/src/assets/VTEX-TEST/ShoppingCart.svg");
     }
   }
 }
