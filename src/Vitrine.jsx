@@ -1,4 +1,4 @@
-import './Vitrine.css'
+import './Vitrine.scss'
 
 export function Vitrine () {
   return (
