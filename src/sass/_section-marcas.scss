@@ -1,10 +1,12 @@
 
 .section-marcas{
+  display: grid;
+  place-items: center;
   margin: 155px 89px 89px 101px;
   &__div{
     display: flex;
-    place-items: center;
-    margin-top: 52px;
+    justify-items: center;
+    margin: 52px auto;
     gap: 40px;
   }   
   &__icon{
