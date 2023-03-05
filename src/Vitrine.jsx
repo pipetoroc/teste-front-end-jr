@@ -20,7 +20,7 @@ export function Vitrine () {
 
   return (
     <section className='section-vitrine'>
-      <h1 className='section-vitrine__h1'>Produtos Relacionados</h1>
+      <h2 className='section-vitrine__h2'>Produtos Relacionados</h2>
       <ul className='section-vitrine__ul'>
         <a className='section-vitrine__a' href='#'><li className='section-vitrine__li'>celular</li></a>
         <a className='section-vitrine__a' href='#'><li className='section-vitrine__li'>accesórios</li></a>

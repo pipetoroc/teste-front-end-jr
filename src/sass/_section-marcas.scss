@@ -1,0 +1,25 @@
+
+.section-marcas{
+  margin: 155px 89px 89px 101px;
+  &__div{
+    display: flex;
+    place-items: center;
+    margin-top: 52px;
+    gap: 40px;
+  }   
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 211px;
+    background-color: $background;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 50%;
+  }
+  &__logo{
+    width: 172px;
+    height: 62.6px;
+    @include background('/src/assets/logo.svg');
+  }
+}

@@ -6,3 +6,6 @@ root.render(<Vitrine />)
 
 const root2 = createRoot(document.getElementById('vitrine2'))
 root2.render(<Vitrine />)
+
+const root3 = createRoot(document.getElementById('vitrine3'))
+root3.render(<Vitrine />)
