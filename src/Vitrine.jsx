@@ -3,6 +3,7 @@ import './Vitrine.scss'
 
 export function Vitrine () {
   const [products, setProducts] = useState([])
+  const [isModalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
     fetch('https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json')
@@ -12,6 +13,10 @@ export function Vitrine () {
         setProducts(products)
       })
   }, [])
+
+  const openModal = () => {
+    setModalOpen(!isModalOpen)
+  }
 
   return (
     <section className='section-vitrine'>
@@ -28,7 +33,7 @@ export function Vitrine () {
         {
           products.map(product => {
             return (
-              <div className='section-vitrine__div' key={product.productName}>
+              <div className='section-vitrine__div' key={product.productName} onClick={openModal}>
                 <img src={product.photo} className='section-vitrine__img' />
                 <p className='section-vitrine__description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
                 <span className='section-vitrine__span'> R$ 30.90 </span>
@@ -39,8 +44,27 @@ export function Vitrine () {
               </div>
             )
           })
-          }
+        }
+        {
+          isModalOpen && (
+            <section className='section-modal'>
+              <article className='section-modal__article'>
+                <div className='section-modal__img' />
+                <div className='section-modal__div'>
+                  <h3 className='section-modal__h3'>Lorem Ipsum dolor sit amet</h3>
+                  <p className='section-modal__p'> R$1.499,90</p>
+                  <span className='section-modal__span'> Many desktop publishing</span>
+                  <a href='#' className='section-modal__a'>Veja mais detalhes do produta </a>
+                </div>
+                <button className='close' onClick={openModal}>
+                  <div />
+                  <div />
+                </button>
+              </article>
 
+            </section>
+          )
+        }
       </article>
     </section>
   )

@@ -66,7 +66,7 @@
     }
     &--logo {
       height: 50.69px;
-      width: 139px;
+      min-width: 139px;
       @include background('/src/assets/logo.svg');
     }
     &--compra {
@@ -115,6 +115,7 @@
     font-family: $font;
     font-weight: 600;
     font-size: 1.2rem;
+    cursor: pointer;
   }
   &__ul {
     display: flex;
