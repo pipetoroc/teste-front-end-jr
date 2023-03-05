@@ -10,6 +10,13 @@
     background-image: linear-gradient(180deg, rgba(0,0,0,0)0%, #000000), url("/src/assets/images/MaskGroup.jpg");
     border-radius: 20px;
   }
+  &__div--produtos{
+    height: 282px;
+    width: 590px;
+    padding: 46px 349px 39px 41px;
+
+  }
+
   &__h2{
     margin-bottom: 8px;
     font-family: $font;
