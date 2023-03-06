@@ -6,10 +6,11 @@
     "sobre information pagamento cadastre"
     "direitos direitos direitos direitos";
   width: 100%;
+  padding: 0 93px;
   background-color: $dark-color;
   color: $background;
   &__sobre{
-    margin: 59px 93px 42px 93px;
+    margin: 59px 93px 42px 0;
     grid-area: sobre;
   }
   &__h4{

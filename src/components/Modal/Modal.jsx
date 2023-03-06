@@ -1,3 +1,4 @@
+import './Modal.scss'
 
 function Modal ({ isModalOpen, openModal }) {
   if (isModalOpen) {
