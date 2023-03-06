@@ -11,6 +11,7 @@
   color: $background;
   &__sobre{
     margin: 59px 93px 42px 93px;
+    grid-area: sobre;
   }
   &__h4{
     width: 100%;
@@ -107,14 +108,27 @@
       margin: 0;
       @include background('../assets/logos/sodexo.svg');
     }
-
+    &--econverse{
+      width: 106.25px;
+      height: 31.62px;
+      margin: 0;
+      @include background('../assets/VTEX-TEST/Grupo1999.svg')
+    }
+    &--vtex{
+      margin: 0;
+      width: 87.83px;
+      height: 32px;
+      @include background('../assets/VTEX-TEST/Group35.svg')
+    }
   }
   &__information{
     margin-top: 59px;
+    grid-area: information;
   }
   &__pagamento{
     margin-top: 59px;
     margin-left: 47px;
+    grid-area: pagamento;
   }
   &__div-container{
     display: flex;
@@ -134,6 +148,7 @@
     margin: 33px 82px 33px 242px;
     border-radius: 10px;
     background-color: $background;
+    grid-area: cadastre;
   }
   &__p--cadastre{
     margin: 40px 70px 15px 29px;
@@ -176,9 +191,30 @@
     border-radius: 4px;
     background-color: $accent-color;
     color: $background;
-
   }
   strong{
     font-size: 2.1rem;
+  }
+  &__direitos{
+    display: flex;
+    border-top: 1px solid $background;
+    grid-area: direitos;
+  }
+  &__p--direitos{
+    width: 698px;
+    height: 26px;
+    margin: 22px 651px 22px 93px;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: $background;
+  }
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
   }
 }
