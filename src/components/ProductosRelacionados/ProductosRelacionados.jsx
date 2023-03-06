@@ -1,10 +1,11 @@
 import './ProductoRelacionado.scss'
 import React from 'react'
+import ProductosTitle from '../ProductosTitle/ProductosTitle'
 
 function ProductosRelacionados () {
   return (
     <>
-      <h2 className='section-vitrine__h2'>Produtos Relacionados</h2>
+      <ProductosTitle />
       <ul className='section-vitrine__ul'>
         <a className='section-vitrine__a' href='#'><li className='section-vitrine__li'>celular</li></a>
         <a className='section-vitrine__a' href='#'><li className='section-vitrine__li'>accesórios</li></a>
