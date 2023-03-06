@@ -1,0 +1,56 @@
+.section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: min-content;
+  padding: 34px 77px 39px 82px;
+  &__a{
+    width: 128px;
+    height: 174px;
+    text-align: center;
+  }
+  &__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128;
+    height: 128px;
+    background-color: $background;
+    box-shadow: 0px 2px 9px rgba(0,0,0,0.22);
+    border-radius: 10px;
+  }
+  &__span{
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    &--tecnologia{
+      @include background("/src/assets/icons/monitorar-tablet-e-smartohone.svg");
+    }
+    &--super{
+      @include background("/src/assets/icons/supermercados.svg");
+    }
+    &--bebida{
+      @include background("/src/assets/icons/whiskey.svg");
+    }
+    &--ferramenta{
+      @include background("/src/assets/icons/ferramentas.svg");
+    }
+    &--saude{
+      @include background("/src/assets/icons/cuidados-de-saude.svg");
+    }
+    &--esportes{
+      @include background("/src/assets/icons/corrida.svg");
+    }
+    &--moda{
+      @include background("/src/assets/icons/moda.svg");
+    }
+  }
+  &__p{
+    margin-top: 22px;
+    font-family: $font;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $accent-color;
+  }
+
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "./sass/global";
+
+.section-vitrine{
+  padding: 0 86px;  
+  &__article{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;  
+    gap: 62px;
+    width: 100%;
+    height: min-content;
+    margin-top: 20px;
+  }
+}

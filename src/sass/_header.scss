@@ -1,0 +1,158 @@
+.header {
+  display: grid;
+  grid-template-rows: 32px 72px 40px;
+  height: 144px;
+  width: 100%;
+  padding: 0 74px 0 86px;
+  &__div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 72px;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    &--container {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      width: 657px;
+      padding: 0 24px;
+      margin: 0 61px 0 95px;
+      background-color: $light-color;
+      border-radius: 10px;
+    }
+  }
+
+  &__input {
+    height: 48px;
+    width: 657px;
+    font-size: 1.4rem;
+    font-family: $font;
+    font-weight: 500;
+    color: $gray;
+    outline: none;
+  }
+
+  &__li {
+    color: $accent-color;
+    margin: 0 60px;
+    &--compra{
+      color: $gray;
+    }
+    &:nth-child(1)::after{
+      content: " 100% seguro ";
+      color: $accent-color;
+      vertical-align: middle;
+    }
+    &:nth-child(2)::after{
+    content: " acima de R$ 200";
+    color: $gray;
+    vertical-align: middle;
+    }
+    &:nth-child(3)::after{
+      content: " suas compras";
+      color: $gray;
+      vertical-align: middle;
+    }
+  }
+  
+  &__span {
+    &--lent {
+      width: 28px;
+      height: 28px;
+      @include background('/src/assets/VTEX-TEST/MagnifyingGlass.svg');  
+    }
+    &--logo {
+      height: 50.69px;
+      min-width: 139px;
+      @include background('/src/assets/logo.svg');
+    }
+    &--compra {
+      display: inline-block;
+      vertical-align:middle;
+      height: 20px;
+      width: 20px;
+      margin-right: 9px;
+      @include background('/src/assets/ShieldCheck.svg');
+    }
+    &--frete {
+      display: inline-block;
+      vertical-align:middle;
+      height: 20px;
+      width: 20px;
+      margin-right: 9px;
+      @include background('/src/assets/Truck.svg');
+    }
+    &--parcele {
+      display: inline-block;
+      vertical-align:middle;
+      height: 20px;
+      width: 20px;
+      margin-right: 9px;
+      @include background('/src/assets/CreditCard.svg');
+    }
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    margin: 0 auto;
+    color: $gray;
+    text-transform: uppercase;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.nav {
+  &__li {
+    text-transform: uppercase;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  &__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    margin: 0 auto;
+    color: $gray;
+    text-transform: uppercase;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__a{
+    width: 32px;
+    height: 32px;
+    margin:0 16px;
+    &:nth-child(1) {
+      width: 24px;
+      height: 24px;
+      @include background("/src/assets/VTEX-TEST/Group.svg");
+    }
+    &:nth-child(2) {
+      @include background("/src/assets/VTEX-TEST/Heart.svg");
+    }
+    &:nth-child(3) {
+      @include background("/src/assets/VTEX-TEST/UserCircle.svg");
+    }
+    &:nth-child(4) {
+      @include background("/src/assets/VTEX-TEST/ShoppingCart.svg");
+    }
+  }
+}
