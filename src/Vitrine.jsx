@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ProductosRelacionados from './components/ProductosRelacionados/ProductosRelacionados'
+import getProducts from './services/getProducts'
 import './Vitrine.scss'
 
 export function Vitrine () {
@@ -7,12 +8,7 @@ export function Vitrine () {
   const [isModalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
-    fetch('https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json')
-      .then(res => res.json())
-      .then(response => {
-        const { products } = response
-        setProducts(products)
-      })
+    getProducts().then(products => setProducts(products))
   }, [])
 
   const openModal = () => {
