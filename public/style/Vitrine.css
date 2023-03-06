@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* Tipografía */
+.section-vitrine {
+  padding: 0 86px;
+}
+.section-vitrine__article {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 62px;
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 20px;
+}
