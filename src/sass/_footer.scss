@@ -6,7 +6,6 @@
     "sobre information pagamento cadastre"
     "direitos direitos direitos direitos";
   width: 100%;
-  height: 396px;
   background-color: $dark-color;
   color: $background;
   &__sobre{
@@ -140,12 +139,12 @@
     gap: 15px;
   }
   &__cadastre{
+    place-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 380px;
     height: 260px;
-    margin: 33px 82px 33px 242px;
     border-radius: 10px;
     background-color: $background;
     grid-area: cadastre;
@@ -197,13 +196,15 @@
   }
   &__direitos{
     display: flex;
+    justify-content: space-between;
+    height: 70px;
     border-top: 1px solid $background;
     grid-area: direitos;
   }
   &__p--direitos{
-    width: 698px;
+    width: 50%;
     height: 26px;
-    margin: 22px 651px 22px 93px;
+    margin: 22px 0 0px 93px;
     font-family: $font;
     font-weight: 400;
     font-size: 1rem;
@@ -215,6 +216,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 93px;
     gap: 32px;
   }
 }
