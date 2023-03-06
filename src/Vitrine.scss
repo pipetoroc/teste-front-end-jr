@@ -4,38 +4,6 @@
 /* Tipografía */
 .section-vitrine{
   padding: 0 86px;  
-  &__h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 45px;
-    text-align: center;
-    color: #f71963;
-  }
-  &__ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 90px 0 86px;
-    background-color: $background;
-  }
-  &__a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 211.5px;
-    height: 40px;
-    text-align: center;
-    border: 1px solid #bdbdbd;
-  }
-  &__li{
-    font-family: $font;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #3b3b3b;
-  }
   &__article{
     display: flex;
     overflow-x: scroll;
