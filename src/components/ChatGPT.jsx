@@ -1,27 +1,28 @@
-import './Card.scss'
 import React, { useState, useEffect } from 'react'
-import getProducts from '../../services/getProducts'
+import { getProducts } from '../services/products' // importa la función para obtener los productos
 
 function Card () {
   const [products, setProducts] = useState([])
+  const [selectedProduct, setSelectedProduct] = useState(null) // guarda el producto seleccionado en el estado
   const [isModalOpen, setModalOpen] = useState(false)
-  const [information, setInformation] = useState(null)
 
   useEffect(() => {
     getProducts().then(products => setProducts(products))
   }, [])
 
   const openModal = (product) => {
-    setInformation(product)
+    setSelectedProduct(product) // establece el producto seleccionado en el estado
     setModalOpen(true)
   }
+
   const closeModal = () => {
-    setInformation(null)
+    setSelectedProduct(null) // establece el producto seleccionado a null para cerrar el modal
     setModalOpen(false)
   }
 
   return (
     <article className='section-vitrine__article'>
+      {/* muestra la lista de productos */}
       {products.map(product => (
         <div className='section-vitrine__div' key={product.productName} onClick={() => openModal(product)}>
           <img src={product.photo} className='section-vitrine__img' />
@@ -33,15 +34,17 @@ function Card () {
           <button className='div__button div__button--vitrina'>COMPRAR</button>
         </div>
       ))}
-      {isModalOpen && information && (
+      {/* muestra el modal si está abierto */}
+      {isModalOpen && (
         <section className='section-modal'>
           <article className='section-modal__article'>
             <div className='section-modal__img' />
             <div className='section-modal__div'>
-              <h3 className='section-modal__h3'>{information.productName}</h3>
-              <p className='section-modal__p'> R${information.price}</p>
-              <span className='section-modal__span'> {information.descriptionShort}</span>
-              <a href='#' className='section-modal__a'>Veja mais detalhes do produta </a>
+              {/* muestra los detalles del producto seleccionado */}
+              <h3 className='section-modal__h3'>{selectedProduct.productName}</h3>
+              <p className='section-modal__p'> R$ {selectedProduct.price}</p>
+              <span className='section-modal__span'>{selectedProduct.description}</span>
+              <a href='#' className='section-modal__a'>Veja mais detalhes do produta</a>
             </div>
             <button className='close' onClick={closeModal}>
               <div />
@@ -53,4 +56,5 @@ function Card () {
     </article>
   )
 }
+
 export default Card

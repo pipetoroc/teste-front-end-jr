@@ -2,13 +2,11 @@ import ProductosRelacionados from './components/ProductosRelacionados/ProductosR
 import './Vitrine.scss'
 import Card from './components/Card/Card'
 
-export function Vitrine ({ isModalOpen }) {
+export function Vitrine () {
   return (
     <section className='section-vitrine'>
       <ProductosRelacionados />
-      <article className='section-vitrine__article'>
-        <Card />
-      </article>
+      <Card />
     </section>
   )
 }

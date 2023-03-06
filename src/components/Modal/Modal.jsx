@@ -1,6 +1,10 @@
 import './Modal.scss'
 
-function Modal ({ isModalOpen, openModal }) {
+function Modal ({ isModalOpen, openModal, product, setModalOpen, setShowProduct }) {
+  const closeModal = () => {
+    setModalOpen(!isModalOpen)
+    setShowProduct(null)
+  }
   if (isModalOpen) {
     return (
       <section className='section-modal'>
@@ -8,11 +12,11 @@ function Modal ({ isModalOpen, openModal }) {
           <div className='section-modal__img' />
           <div className='section-modal__div'>
             <h3 className='section-modal__h3'>Lorem Ipsum dolor sit amet</h3>
-            <p className='section-modal__p'> R$1.499,90</p>
+            <p className='section-modal__p'> R${product.price}</p>
             <span className='section-modal__span'> Many desktop publishing</span>
             <a href='#' className='section-modal__a'>Veja mais detalhes do produta </a>
           </div>
-          <button className='close' onClick={openModal}>
+          <button className='close' onClick={closeModal}>
             <div />
             <div />
           </button>
