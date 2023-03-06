@@ -1,0 +1,65 @@
+@import "/src/sass/global"; 
+
+.section-vitrine__div{
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 500px;
+  padding: 32px 12px 16px 11px;
+  border-radius: 10px;
+  background-color: $background;
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.section-vitrine__img{
+  width: 247px;
+  height: 228px;
+  margin-bottom: 9px;
+}
+.section-vitrine__description{
+  width: 25ch;
+  margin-bottom: 12px;
+  font-family: $font;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 22.5px;
+}
+.section-vitrine__price{
+  font-family: $font;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #3f3f40;
+}
+.section-vitrine__span{
+  margin: 2px 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #808080;
+  text-decoration: line-through;
+}
+.section-vitrine__p{
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #3f3f40;
+}
+.section-vitrine__frete{
+  margin-top: 7px;
+  font-family: $font;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 18px;
+  color: $accent-color;
+}
+.div__button--vitrina{
+  margin-top: 11px;
+  width: 245px;
+  height: 44px;
+  margin-top: 12px;
+  border-radius: 4px;
+}

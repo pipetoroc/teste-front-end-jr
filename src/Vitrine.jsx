@@ -1,25 +1,27 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import ProductosRelacionados from './components/ProductosRelacionados/ProductosRelacionados'
-import getProducts from './services/getProducts'
+// import getProducts from './services/getProducts'
 import './Vitrine.scss'
+import Card from './components/Card/Card'
 
-export function Vitrine () {
-  const [products, setProducts] = useState([])
-  const [isModalOpen, setModalOpen] = useState(false)
+export function Vitrine ({ isModalOpen }) {
+  // const [products, setProducts] = useState([])
+  // const [isModalOpen, setModalOpen] = useState(false)
 
-  useEffect(() => {
-    getProducts().then(products => setProducts(products))
-  }, [])
+  // useEffect(() => {
+  //   getProducts().then(products => setProducts(products))
+  // }, [])
 
-  const openModal = () => {
-    setModalOpen(!isModalOpen)
-  }
+  // const openModal = () => {
+  //   setModalOpen(!isModalOpen)
+  // }
 
   return (
     <section className='section-vitrine'>
       <ProductosRelacionados />
       <article className='section-vitrine__article'>
-        {
+        <Card />
+        {/* {
           products.map(product => {
             return (
               <div className='section-vitrine__div' key={product.productName} onClick={openModal}>
@@ -29,7 +31,7 @@ export function Vitrine () {
                 <p className='section-vitrine__price'>R$ {product.price}</p>
                 <p className='section-vitrine__p'> ao 2x de R$ 49.95 sem juros </p>
                 <span className='section-vitrine__frete'> Frete grátis </span>
-                <button className='div__button div__button--vitrina'>COMRPAR</button>
+                <button className='div__button div__button--vitrina'>COMPRAR</button>
               </div>
             )
           })
@@ -50,10 +52,9 @@ export function Vitrine () {
                   <div />
                 </button>
               </article>
-
             </section>
           )
-        }
+        } */}
       </article>
     </section>
   )
