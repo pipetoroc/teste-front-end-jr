@@ -5,7 +5,7 @@ Essa é uma página de um E-commerce de tecnologia desenvolvida usando etiquetas
 
 ## Como Usar
 1. Clone esse repositório
-`git clone https://githu`.com/pipetoroc/teste-front-end-jr`
+`git clone https://github.com/pipetoroc/teste-front-end-jr.git`
 
 2. Navegue a pasta
 `cd teste-front-end-jr`
