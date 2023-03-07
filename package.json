@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d dist" 
    },
   "dependencies": {
     "gh-pages": "^5.0.0",
@@ -27,5 +27,5 @@
   "eslintConfig": {
     "extends": "standard"
   },
-  "homepage": "https://pipetoroc.github.io/teste-front-end-jr/"
+  "homepage": "pipetoroc.github.io/teste-front-end-jr/"
 }
