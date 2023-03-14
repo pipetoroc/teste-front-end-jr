@@ -1,5 +1,4 @@
-import './Card.scss'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import getProducts from '../../services/getProducts'
 
 function Card () {

@@ -1,5 +1,3 @@
-import './ProductosTitle.scss'
-
 function ProductosTitle () {
   return (
     <h2 className='section-vitrine__h2'>Produtos Relacionados</h2>

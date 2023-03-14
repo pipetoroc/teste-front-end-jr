@@ -1,4 +1,4 @@
-@import "/src/sass/global"; 
+@use "./global" as *; 
 
 .section-vitrine__div{
   scroll-snap-align: center;

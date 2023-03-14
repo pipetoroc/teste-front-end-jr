@@ -1,3 +1,5 @@
+@use "./global" as *;
+
 .header {
   display: grid;
   grid-template-rows: 32px 72px 40px;

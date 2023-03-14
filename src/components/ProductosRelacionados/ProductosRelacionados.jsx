@@ -1,4 +1,3 @@
-import './ProductoRelacionado.scss'
 import ProductosTitle from '../ProductosTitle/ProductosTitle'
 
 function ProductosRelacionados () {

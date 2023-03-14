@@ -1,8 +1,16 @@
-@import "./global";
-@import "./reset";
-@import "./header";
-@import "./promotion";
-@import "./section-icon";
-@import "./parceiros";
-@import "./section-marcas";
-@import "./footer";
+@use "./global";
+@use "./reset";
+
+//Index
+@use "./header";
+@use "./promotion";
+@use "./section-icon";
+@use "./parceiros";
+@use "./section-marcas";
+@use "./footer";
+
+// Components
+@use "./Card";
+@use "./ProductosTitle";
+@use "./ProductoRelacionado";
+@use "./Vitrine2";
