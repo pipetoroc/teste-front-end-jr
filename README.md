@@ -11,7 +11,7 @@ Essa é uma página de um E-commerce de tecnologia desenvolvida usando etiquetas
 `cd teste-front-end-jr`
 
 3. Instale as dependências
-`npm instal`
+`npm install`
 
 4. Inicie o projeto com o comando:
 `npm run dev`
