@@ -21,3 +21,6 @@ Essa é uma página de um E-commerce de tecnologia desenvolvida usando etiquetas
 - SASS
 - JavaScript
 - React JS
+
+## Demo
+- Pode dar uma olheada  o site em o link de [github-pages](https://pipetoroc.github.io/teste-front-end-jr/)
